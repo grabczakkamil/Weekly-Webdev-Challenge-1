@@ -1,4 +1,5 @@
 /*main styles start*/
+
 * {
     box-sizing: border-box;
 }
@@ -81,7 +82,10 @@ i {
     font-family: 'Open Sans', sans-serif;
 }
 
-input[type="text"], input[type="email"], input[type="password"], input[type="tel"],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
 select,
 textarea {
     font-size: 15px;
@@ -92,10 +96,14 @@ textarea {
     margin: 0 0 0 20px;
 }
 
+select:invalid {
+    color: #afafaf;
+}
+
 textarea {
     resize: none;
     height: 250px;
-    margin-left: 0; 
+    margin-left: 0;
 }
 
 #message-box {
@@ -111,15 +119,17 @@ textarea:focus {
 }
 
 .checkbox {
-    margin-top:20px;
-    color:#222;
-    font-size:17px;
+    margin-top: 20px;
+    color: #222;
+    font-size: 17px;
 }
+
 input[type="checkbox"] {
     font-size: 15px;
     border: 1px solid #afafaf;
     border-radius: 3px;
     -webkit-appearance: none;
+    -moz-appearance: none;
     padding: 10px;
     margin: 10px 0 0 0;
 
@@ -129,14 +139,14 @@ input[type="checkbox"] {
     color: #afafaf;
     position: relative;
     cursor: pointer;
-    top:-5px;
+    top: -5px;
 }
 
 input[type="checkbox"]:checked:after {
     content: '';
-	position: absolute;
-	width: 12px;
-	height: 12px;
+    position: absolute;
+    width: 12px;
+    height: 12px;
     background-color: #8bcb27;
     transform: translate(-50%, -50%);
     border-radius: 3px;
@@ -158,6 +168,7 @@ input[type="checkbox"]:checked:after {
 .btn-submit:hover {
     background: #3a9a00;
 }
+
 .btn-submit:active {
     transform: translateY(4px);
 }
@@ -171,26 +182,31 @@ input[type="submit"]:disabled {
     background: linear-gradient(#f77484, #f13848);
     border: #a21f2a;
 }
+
 #no-thanks:hover {
     background: #a21f2a;
 }
 
-#no-thanks:active{
+#no-thanks:active {
     transform: translateY(4px);
 }
+
 .two-buttons {
     width: 100%;
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
 }
+
 .inline-submit {
     width: 45%;
 }
+
 #remember-inputs {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 #sign-in {
     max-width: 40%;
 }
@@ -203,7 +219,7 @@ footer {
 
 @media (min-width: 992px) {
     .all-forms-container {
-        display:flex;
+        display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         height: 1372px;
@@ -211,8 +227,9 @@ footer {
     .form-container {
         max-width: 45%;
     }
-} 
+}
+
 @media (max-width: 457px) {
     .btn-submit {
-    font-size: 20px;
-}
+        font-size: 20px;
+    }

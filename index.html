@@ -33,12 +33,12 @@
                     <input type="password" id="confirm-password" placeholder="Confirm Password" required>
                 </div>
                 <div class="input-with-icon">
-                   <label for="email"><i class="icon-mail"></i></label>
-                    <input type="email" id="email" placeholder="Email" required>
+                   <label for="email-1"><i class="icon-mail"></i></label>
+                    <input type="email" id="email-1" class="emails" placeholder="Email" required>
                 </div>
                 <div class="input-with-icon">
                    <label for="location"><i class="icon-location"></i></label>
-                    <select name="city" id="location" required>
+                    <select name="city" id="location" required="">
                     <option id="your-location" value="" disabled selected hidden>Your Location</option>
                    <option value="Warszawa">Warszawa</option>
                    <option value="Kraków">Kraków</option>
@@ -64,15 +64,15 @@
                     <input type="text" id="username" placeholder="Your Name" required>
                 </div>
                 <div class="input-with-icon">
-                    <label for="email"><i class="icon-mail"></i></label>
-                    <input type="email" id="email" placeholder="Your Email" required>
+                    <label for="email-2"><i class="icon-mail"></i></label>
+                    <input type="email" id="email-2" class="emails" placeholder="Your Email" required>
                 </div>
                 <div class="input-with-icon" id="message-box">
                     <label for="message"></label>
                     <textarea name="message" id="message" placeholder="Type your message..." required></textarea>
                </div>
                 <div class="checkbox">
-                    <input type="checkbox" id="checkbox-2" required>
+                    <input type="checkbox" id="checkbox-2">
                     <label class="terms" for="checkbox-2">Send a copy to my Email</label>
                 </div>
                 <input type="submit" value="Send Email" class="btn-submit">
@@ -94,7 +94,7 @@
                 </div>
                 <div id="remember-inputs">
                 <div class="checkbox">
-                    <input type="checkbox" id="checkbox-3" required>
+                    <input type="checkbox" id="checkbox-3">
                     <label class="terms" for="checkbox-3">Remember Me</label>
                 </div>
                 <input type="submit" value="Sign in" class="btn-submit" id="sign-in">
@@ -107,8 +107,8 @@
            <h1 class="form-title">Recover Form</h1>
             <form action="">
                 <div class="input-with-icon">
-                    <label for="email"><i class="icon-mail"></i></label>
-                    <input type="email" id="email" placeholder="Enter your Email" required>
+                    <label for="email-3"><i class="icon-mail"></i></label>
+                    <input type="email" id="email-3" class="emails" placeholder="Enter your Email" required>
                 </div>
                 <div class="input-with-icon">
                     <label for="phone"><i class="icon-mobile-alt"></i></label>
@@ -126,8 +126,8 @@
            <h1 class="form-title">Subscribe Form</h1>
             <form action="">
                 <div class="input-with-icon">
-                    <label for="email"><i class="icon-mail"></i></label>
-                    <input type="email" id="email" placeholder="Enter your Email" required>
+                    <label for="email-4"><i class="icon-mail"></i></label>
+                    <input type="email" id="email-4" class="emails" placeholder="Enter your Email" required>
                 </div>
                 <div class="two-buttons">
                 <input type="submit" value="Subscribe" class="btn-submit inline-submit">
@@ -143,6 +143,8 @@
         </div>
 <!--Footer End -->
     </div>
+    
+    <script src="js/main.js"></script>
 </body>
 
 </html>
