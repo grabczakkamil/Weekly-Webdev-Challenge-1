@@ -1,3 +1,4 @@
+/*main styles start*/
 * {
     box-sizing: border-box;
 }
@@ -19,7 +20,7 @@ body {
 }
 
 
-.form-1 {
+.form-container {
     max-width: 100%;
     max-height: auto;
     margin: 0 5% 0 5%;
@@ -41,13 +42,16 @@ form {
 }
 
 header {
+    margin-top: 50px;
     display: flex;
     justify-content: center;
-    margin: 50px 0 0 0;
 }
 
 img {
-    opacity: 0.5;
+    opacity: 0.3;
+    max-width: 70%;
+    height: auto;
+    object-fit: contain;
 }
 
 .input-with-icon {
@@ -88,15 +92,9 @@ textarea {
     margin: 0 0 0 20px;
 }
 
-/*
-#your-location {
-    color: #afafaf;
-}
-*/
-
 textarea {
     resize: none;
-    height: 80px;
+    height: 250px;
     margin-left: 0; 
 }
 
@@ -105,7 +103,8 @@ textarea {
 }
 
 input:focus,
-select:focus
+select:focus,
+option:focus,
 textarea:focus {
     outline: none;
     background: white;
@@ -187,9 +186,33 @@ input[type="submit"]:disabled {
 .inline-submit {
     width: 45%;
 }
+#remember-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#sign-in {
+    max-width: 40%;
+}
 
 footer {
     display: flex;
     justify-content: center;
     margin: 50px 0 50px 0;
+}
+
+@media (min-width: 992px) {
+    .all-forms-container {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 1372px;
+    }
+    .form-container {
+        max-width: 45%;
+    }
+} 
+@media (max-width: 457px) {
+    .btn-submit {
+    font-size: 20px;
 }
